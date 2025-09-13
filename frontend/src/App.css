@@ -1,0 +1,130 @@
+/* #region Importações e Reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('./assets/Frame-1707482020.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* #endregion */
+
+/* #region Container principal */
+.container-encurtador {
+  min-height: 100vh;
+  background-image: url('./assets/Comhub-name.webp');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  padding: 20px;           
+}
+/* #endregion */
+
+/* #region Lista de URLs */
+.url-list {
+  list-style: none;
+  padding: 20px !important;
+  margin: 0 auto;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.url-list .list-header {
+  text-align: center !important;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header h2 {
+  width: 100%;
+  color: #FDB913;
+}
+
+.url-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin: 5px;
+  margin-bottom: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.url-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+/* #endregion */
+
+/* #region Informações da URL */
+.url-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.url-long {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* #endregion */
+
+/* #region Stats (cliques e ícone) */
+.url-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* #endregion */
+
+/* #region Botões */
+.btn-link {
+  background-color: transparent;
+  padding: 5px !important;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid #FDB913 !important;
+  color: white;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  background-color: #FDB913;
+  color: black !important;
+  transform: translateY(-3px);
+}
+/* #endregion */
+
+.container-encurtador .row {
+  gap: 3rem; /* espaço entre colunas */
+}
+
+.container-encurtador .col-12 {
+  margin-bottom: 2rem; /* espaço vertical em telas pequenas */
+}
